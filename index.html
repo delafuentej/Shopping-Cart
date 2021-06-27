@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script defer src="./main.js"></script>
+    <title>Shopping Cart</title>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1>Shopping Cart</h1>
+        <hr>
+        <div id="cards" class="row"></div>
+        <!-- cart -->
+        <table class="table mt-5">
+            <thead>
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Item</th>
+                    <th scope="col">Amount</th>
+                    <th scope="col">+/-</th>
+                    <th scope="col">Total</th>
+                </tr>
+            </thead>
+
+            <tbody id="items"></tbody>
+
+            <tfoot>
+                <tr id="footer">
+                    <th scope="row" colspan="5">Cart is empty, start buying</th>
+                </tr>
+            </tfoot>
+
+
+
+        </table>
+
+        <div id="cards" class="row"></div>
+
+
+    </div>
+    <!-- templates -->
+    <template id="template-card">
+        <div class="col-12 mb-2 col-md-4">
+            <div class="card">
+                <img src="" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h5>Title</h5>
+                    <p>Price</p>
+                    <button class="btn btn-dark">Buy</button>
+                </div>
+            </div>
+        </div>
+    </template>
+
+
+    <template id="template-cart">
+        <tr>
+            <th scope="row">id</th>
+            <td>title</td>
+            <td>Amount</td>
+            <td>
+                <button class="btn btn-success btn-sm">
+                    +
+                </button>
+                <button class="btn btn-danger btn-sm">
+                    -
+                </button>
+            </td>
+            <td><span>amount*price</span></td>
+        </tr>
+    </template>
+
+
+    <template id="template-footer">
+        <th scope="row" colspan="2">Total products</th>
+        <td>amountAddUp</td>
+        <td>
+            <button class="btn btn-danger btn-sm" id="empty">
+                empty all
+            </button>
+        </td>
+        <td class="font-weight-bold"> <span>priceAddUp</span>€</td>
+    </template>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+[
+    {
+        "id": 1,
+        "title": "Coffe",
+        "price": 3,
+        "thumbnailUrl": "./img/coffee.jpg"
+        
+    },
+    {
+        "id": 2,
+        "title": "Pizza",
+        "price": 12,
+        "thumbnailUrl": "./img/pizza.jpg"
+    },
+    
+    {
+        "id": 3,
+        "title": "Water",
+        "price": 1.5,
+        "thumbnailUrl": "./img/bottle-water.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Watermelon",
+        "price": 6,
+        "thumbnailUrl": "./img/water-melone2.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Mango",
+        "price": 3.25,
+        "thumbnailUrl": "./img/mango.jpg"
+    },
+    {
+        "id": 6,
+        "title": "Beer",
+        "price": 4,
+        "thumbnailUrl": "./img/beer.jpg"
+    }
+]
